@@ -1,0 +1,260 @@
+/*
+########################################
+                  Global
+########################################
+*/
+
+/*Farbe: #2e2e2e / #fff / #000 / #1d2c2f*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Work+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: "Work Sans";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Lora";
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Work Sans";
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
+}
+
+figure {
+  line-height: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*
+########################################
+                  Header
+########################################
+*/
+
+header {
+  height: 100vh;
+  display: flex;
+}
+
+header article {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header article h1 {
+  font-size: 5rem;
+}
+
+header article h1 span {
+  padding: 0 0.5rem;
+}
+
+header article p {
+  font-family: "Lora";
+}
+
+header figure {
+  width: 68%;
+}
+
+/*
+########################################
+                  Main
+########################################
+*/
+
+/*---------- sticky ----------*/
+
+.sticky {
+  height: 10vh;
+  background: #2e2e2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.sticky nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10rem;
+  margin-right: 5rem;
+}
+
+/*---------- split ----------*/
+
+.split {
+  background: #2e2e2e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 8% 0;
+  margin-bottom: 10%;
+}
+
+.split figure {
+  width: 60%;
+}
+
+.split article {
+  width: 40%;
+}
+
+.split article h2 {
+  text-align: center;
+}
+
+.split article p {
+  width: 90%;
+  text-align: justify;
+  word-spacing: 0.5rem;
+}
+
+/*---------- gallery ----------*/
+
+.gallery {
+  text-align: center;
+}
+
+.gallery article:first-of-type p {
+  width: 35%;
+  margin: 1rem auto 5rem auto;
+  word-spacing: 0.5rem;
+  text-align: start;
+}
+
+.gallery article:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallery article:nth-of-type(2) p {
+  margin: 0;
+}
+
+.gallery figure {
+  width: 30%;
+  padding-bottom: 5rem;
+}
+
+/*---------- contact ----------*/
+
+.contact {
+  height: 80vh;
+  background: #2e2e2e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  padding: 0 10rem;
+}
+
+.contact article,
+.contact form {
+  width: 50%;
+}
+
+.contact form label {
+  font-size: 1.5rem;
+}
+
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 80%;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact form input:last-of-type {
+  width: 5rem;
+}
+
+/*
+########################################
+                  Footer
+########################################
+*/
+
+footer {
+  background: #1d2c2f;
+  color: #fff;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+
+/*
+########################################
+                Responsive
+########################################
+*/
+
+@media (max-width: 1440px) {
+  header {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: 1rem;
+  }
+
+  header {
+    background: url(../img/design-interior-1.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header article {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+
+  header figure {
+    display: none;
+  }
+}
